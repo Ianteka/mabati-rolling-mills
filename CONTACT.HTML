@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Mabati Rolling Mills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("Assets/HomepageMabati.jpeg");
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 30px;
+      border-radius: 10px;
+      color: #000;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    form {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      resize: vertical;
+    }
+
+    textarea {
+      min-height: 100px;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      background-color: #0057a3;
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #004080;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <section id="contact">
+        <a href="index.html" style="text-decoration:none; color:#0057a3; font-weight:bold; display:inline-block; margin-bottom:20px;">
+  ← Back
+</a>
+
+      <h2>Contact Us</h2>
+      <p><strong>Phone (WhatsApp):</strong> <a href="https://wa.me/254785827637" target="_blank">+254 7 858 27637</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@mabatirollingmills.com">info@mabatirollingmills.com</a></p>
+      <p><strong>Address:</strong> 123 Industrial Area, Nairobi, Kenya</p>
+      <p><strong>Location:</strong> <a href="https://www.google.com/maps/place/Industrial+Area,+Nairobi" target="_blank">View on Google Maps</a></p>
+
+      <form action="#" method="POST">
+        <h3 style="margin-top: 30px;">Leave Us a Message</h3>
+
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+</body>
+</html>

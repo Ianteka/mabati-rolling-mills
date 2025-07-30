@@ -1,0 +1,140 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #0074cc;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #0074cc;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #e0e0e0;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+a {
+  color: #0074cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+}
+.product {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product img {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.adsense {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  border: 2px dashed #ccc;
+  margin-top: 30px;
+}
+.toggle-title {
+  cursor: pointer;
+  background-color: #0074cc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.toggle-title:hover {
+  background-color: #005fa3;
+}
+
+.toggle-list {
+  display: none;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Mobile Responsive Layout */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product {
+    margin-bottom: 20px;
+  }
+}
+.navbar {
+  background-color: #0074cc;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: #005fa3;
+}
+
+
