@@ -136,15 +136,8 @@ footer {
 .navbar a:hover {
   background-color: #005fa3;
 }
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url("Assets/HomepageMabati.jpeg");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  color: #333;
-}
+
+
 
 .top-bar {
   display: flex;
@@ -291,6 +284,12 @@ body {
   width: 40px;
   height: 40px;
   margin-top: 10px;
+}
+.reviews-page {
+  background-image: url("Assets/HomepageMabati.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 
