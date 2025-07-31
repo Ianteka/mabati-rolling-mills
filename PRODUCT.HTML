@@ -3,134 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Products - Mabati Rolling Mills</title>
+  <title>Products | Mabati Rolling Mills</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
     }
 
     header {
       background-color: #2c3e50;
       color: white;
-      padding: 20px;
       text-align: center;
+      padding: 1.5rem;
     }
 
     nav {
       background-color: #34495e;
-      padding: 10px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
+      padding: 0.75rem;
+      text-align: center;
     }
 
     nav a {
-      background: #ecf0f1;
-      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin: 20px 40px 0;
       text-decoration: none;
       color: #2c3e50;
       font-weight: bold;
-      border-radius: 5px;
+      border: 2px solid #2c3e50;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #ecf0f1;
     }
 
     section {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 2rem;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
+    h2, h3 {
+      color: #2c3e50;
+      text-align: center;
+      margin-bottom: 1rem;
     }
 
-    li {
-      padding: 10px;
-      background-color: #ecf0f1;
-      margin: 10px 0;
-      border-left: 5px solid #2980b9;
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.8rem;
+      margin-top: 1.5rem;
+      padding: 0 2rem;
     }
 
-    .back-home-btn {
-      margin-top: 20px;
-      display: flex;
-      justify-content: center;
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.2s ease;
     }
 
-    .back-home-btn a {
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card .info {
+      padding: 1rem;
+    }
+
+    .product-card h4 {
+      margin: 0.5rem 0;
+      color: #2c3e50;
+      font-size: 1.1rem;
+    }
+
+    .product-card p {
+      margin: 0;
+      color: #27ae60;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    footer {
       background-color: #2c3e50;
       color: white;
-      padding: 10px 25px;
-      text-decoration: none;
-      font-size: 16px;
-      border-radius: 5px;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-    
+
   <header>
     <h1>Mabati Rolling Mills</h1>
   </header>
 
-  <!-- Navigation -->
   <nav>
     <a href="index.html">Home</a>
-    <a href="product.html">Products</a>
+    
   </nav>
 
-  <!-- PRODUCTS SECTION -->
+  <a href="index.html" class="back-button">&larr; Back to Home</a>
+
   <section>
     <h2>Our Products</h2>
 
     <h3>Cement Products</h3>
-    <ul>
-      <li><strong>Water Resistant Cement:</strong> Ksh. 850 per bag</li>
-      <li><strong>General Purpose Cement:</strong> Ksh. 650 per bag</li>
-      <li><strong>High Strength Cement:</strong> Ksh. 750 per bag</li>
-    </ul>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Assets/Generalpurpose.jpeg" alt="General Purpose Cement">
+        <div class="info">
+          <h4>General Purpose Cement</h4>
+          <p>Ksh. 650 per bag</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="Assets/CEMENT.jpeg" alt="High Strength Cement">
+        <div class="info">
+          <h4>High Strength Cement</h4>
+          <p>Ksh. 750 per bag</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="Assets/Waterresistant.jpeg" alt="Water Resistant Cement">
+        <div class="info">
+          <h4>Water Resistant Cement</h4>
+          <p>Ksh. 850 per bag</p>
+        </div>
+      </div>
+    </div>
 
     <h3>Roofing Solutions</h3>
-    <ul>
-      <li><strong>Box Profile Roofing Sheets:</strong> Ksh. 850 per sheet</li>
-      <li><strong>Standing Seam Roof:</strong> Ksh. 1,250 per sheet</li>
-      <li><strong>Corrugated Roofing Sheet:</strong> Ksh. 750 per sheet</li>
-    </ul>
-    
-<!-- Product Image Slider -->
-<div style="text-align: center; margin-top: 30px;">
-  <img id="productSlider" src="Assets/constructedhouse.jpeg" alt="Product Image" 
-       style="width: 85%; max-width: 600px; height: 350px; object-fit: cover; border-radius: 10px;" />
-</div>
-
-<script>
-  const sliderImages = [
-    "Assets/constructedhouse.jpeg",
-    "Assets/Usualsheet.jpeg",
-    "Assets/Cement.jpeg"
-  ];
-
-  let sliderIndex = 0;
-  const slider = document.getElementById("productSlider");
-
-  setInterval(() => {
-    sliderIndex = (sliderIndex + 1) % sliderImages.length;
-    slider.src = sliderImages[sliderIndex];
-  }, 3000); // switch every 3 seconds
-</script>
-
-
-
-    <div class="back-home-btn">
-      <a href="index.html">Back to Home</a>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="Assets/Boxprofile.jpeg" alt="Box Profile Roofing Sheets">
+        <div class="info">
+          <h4>Box Profile Roofing Sheets</h4>
+          <p>Ksh. 850 per sheet</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="Assets/Standingseem.jpeg" alt="Standing Seam Roof">
+        <div class="info">
+          <h4>Standing Seam Roof</h4>
+          <p>Ksh. 1,250 per sheet</p>
+        </div>
+      </div>
+      <div class="product-card">
+        <img src="Assets/Corrugatedsheet.jpeg" alt="Corrugated Roofing Sheet">
+        <div class="info">
+          <h4>Corrugated Roofing Sheet</h4>
+          <p>Ksh. 750 per sheet</p>
+        </div>
+      </div>
     </div>
   </section>
+
+  <footer>
+    &copy; 2025 Mabati Rolling Mills. All rights reserved.
+  </footer>
 
 </body>
 </html>
