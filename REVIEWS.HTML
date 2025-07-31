@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reviews - Mabati Rolling Mills</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="top-bar">
+    <img src="Assets/MRM.jpeg" alt="MRM Logo" class="logo" />
+    <div class="menu">
+      <div class="dots">&#8942;</div>
+      <div class="dropdown">
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="warranty.html">Warranty</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="reviews">
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p class="content">The reception was great. The sales team linked us to an engineer named Kwach. He was really useful in showing around some building structures we needed to see.</p>
+      <h3 class="reviewer">John Kamau</h3>
+      <p class="role">Homeowner</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p class="content">They offer great roofing solutions suitable for the environment and the customer need. They have excellent customer services which provide the customer with sufficient information.</p>
+      <h3 class="reviewer">Mary Wanjiku</h3>
+      <p class="role">Building Contractor</p>
+    </div>
+
+    <div class="review">
+      <div class="stars">★★★★★</div>
+      <p class="content">Never had to think of roofing worries again since I started using their product. Superior product quality. The best.</p>
+      <h3 class="reviewer">Peter Odhiambo</h3>
+      <p class="role">Property Developer</p>
+    </div>
+
+    <!-- Hidden reviews -->
+    <div id="more-reviews" style="display: none;">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p class="content">Their roofing sheets handled the recent heavy rains perfectly. I’ll be referring them to my clients without hesitation.</p>
+        <h3 class="reviewer">Susan Njeri</h3>
+        <p class="role">Architect</p>
+      </div>
+
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p class="content">What impressed me most was the durability and finish. No leaks, no fading, no regrets!</p>
+        <h3 class="reviewer">David Otieno</h3>
+        <p class="role">Site Supervisor</p>
+      </div>
+    </div>
+
+    <div class="show-more">
+      <button onclick="document.getElementById('more-reviews').style.display='block'; this.style.display='none';">Show More Reviews</button>
+    </div>
+  </section>
+
+  <div class="back-btn">
+    <a href="index.html">&larr; Home</a>
+  </div>
+
+  <footer class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Have any questions or need any assistance? We are here to help 24 hours a day, 7 days a week.</p>
+    <a href="https://wa.me/254785827637" target="_blank">
+      <img src="Assets/App loggo.jpeg" alt="WhatsApp" class="whatsapp-logo" />
+    </a>
+  </footer>
+
+</body>
+</html>

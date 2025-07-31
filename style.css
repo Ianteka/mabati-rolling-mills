@@ -136,5 +136,162 @@ footer {
 .navbar a:hover {
   background-color: #005fa3;
 }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url("Assets/HomepageMabati.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dots {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown a {
+  color: #333;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #f1f1f1;
+}
+
+.menu:hover .dropdown {
+  display: block;
+}
+
+.reviews {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+
+.review {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stars {
+  font-size: 20px;
+  color: #FFD700;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.reviewer {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.role {
+  font-size: 14px;
+  color: #666;
+  font-style: italic;
+}
+
+.show-more {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.show-more button {
+  padding: 10px 20px;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.show-more button:hover {
+  background-color: #003060;
+}
+
+.back-btn {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: white;
+  background-color: #004080;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.contact-us {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.contact-us h2 {
+  margin-bottom: 10px;
+}
+
+.contact-us .ask {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contact-us p {
+  margin-bottom: 10px;
+}
+
+.whatsapp-logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+}
+
 
 
